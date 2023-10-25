@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: stash-app
+category:
+name: stash-app
+version: 0.23.1
+tagline: An organizer for your porn, written in Go
+description: >-
+  Stash is a self-hosted webapp written in Go which organizes and serves your porn.
+
+  Stash gathers information about videos in your collection from the internet, and is extensible through the use of community-built plugins for a large number of content producers and sites.
+  Stash supports a wide variety of both video and image formats.
+  You can tag videos and find them later.
+  Stash provides statistics about performers, tags, studios and more.
+developer: stashapp
+website: https://github.com/stashapp/stash
+dependencies: []
+repo: https://github.com/stashapp/stash
+support: https://github.com/stashapp/stash/issues
+port: 9999
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
