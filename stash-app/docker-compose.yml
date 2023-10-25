@@ -3,12 +3,12 @@ version: '3.7'
 services:
   app_proxy:
     environment:
-      APP_HOST: stash-app_web_1
+      APP_HOST: stash-app
       APP_PORT: 8089
 
   stash-app:
     image: stashapp/stash:latest
-    container_name: stash_app
+    container_name: stash-app
     restart: unless-stopped
     ## If you intend to use stash's DLNA functionality uncomment the below network mode and comment out the above ports section
     # network_mode: host
@@ -23,7 +23,7 @@ services:
       - STASH_METADATA=/metadata/
       - STASH_CACHE=/cache/
       ## Adjust below to change default port (9999)
-      - STASH_PORT=8088
+      - STASH_PORT=8089
     volumes:
       - /etc/localtime:/etc/localtime:ro
       ## Adjust below paths (the left part) to your liking.
