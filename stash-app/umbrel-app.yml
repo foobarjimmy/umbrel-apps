@@ -16,7 +16,7 @@ website: https://github.com/stashapp/stash
 dependencies: []
 repo: https://github.com/stashapp/stash
 support: https://github.com/stashapp/stash/issues
-port: 9999
+port: 8089
 gallery:
   - 1.jpg
   - 2.jpg
