@@ -2,11 +2,9 @@ version: '3.7'
 
 services:
   app_proxy:
-    ports:
-      - "${APP_PROXY_PORT}:${APP_PROXY_PORT}"
     environment:
       APP_HOST: stash-app_web_1
-      APP_PROXY_PORT: 9999
+      PROXY_PORT: 9999
 
   stash-app:
     image: stashapp/stash:latest
